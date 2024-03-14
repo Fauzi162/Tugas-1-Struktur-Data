@@ -27,3 +27,19 @@ class DaftarPesanan:
             temp = temp.next
 
         temp.next = pesanan
+
+print(
+"""
+1. Mixue Ice Cream: 7000
+2. Mi gacoan: 10000
+3. Bobaa Shake: 20000
+4. mie sundae : 14000
+5. mie ganas : 11000
+6. creamy mango boba : 22000
+""")
+pesanan = int(input("Silahkan memesan dari menu (input nomer): "))
+daftar_pesanan.tambahkan_pesanan(MENU[pesanan - 1][0], MENU[pesanan - 1][1])
+
+MENU = [
+    ["Mixue Ice Cream", 5_000],
+    ["Bobaa Shake", 20_000],
